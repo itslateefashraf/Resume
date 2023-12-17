@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.user-detail {
+  font-size: 13px;
+}
+.email,
+.contact,
+.address {
+  line-height: 1px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.address i,
+.contact i,
+.email i {
+  color: rgb(12, 141, 240);
+}
+
+.profile-name {
+  margin: 10px 0 7px 19px;
+}
+.profession-icon,
+.education-icon,
+.employment-icon,
+.skill-icon,
+.hobbie-icon,
+.language-icon {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profession-icon h1,
+.education-icon h1,
+.employment-icon h1 {
+  margin: 0;
+}
+
+.profession-icon i,
+.education-icon i,
+.employment-icon i,
+.skill-icon i,
+.hobbie-icon i,
+.language-icon i {
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  background-color: rgb(12, 141, 240);
+  border-radius: 50%;
+  border: 1px solid gray;
+}
+
+.summary-info {
+  width: 700px;
+}
+.about-skills .box {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-skills .box .persent {
+  position: relative;
+  width: 100%;
+  height: 7px;
+  background: rgb(242, 245, 244);
+}
+
+.about-skills .box .persent div{
+  position: absolute;
+  top:0;
+  left: 0;
+  height: 100%;
+  background: rgb(12, 141, 240);
+}
+.about-language .boxx {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.about-language .boxx .percent{
+  position: relative;
+  width: 100%;
+  height: 7px;
+  background-color: aliceblue;
+}
+.about-language .boxx .percent div{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: rgb(12, 141, 240);
+}
