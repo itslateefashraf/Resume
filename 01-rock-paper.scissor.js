@@ -9,6 +9,20 @@ if (!score)  {
 
 
 updateScore();
+let isautoPlaying = false;
+let intervalId;
+ function autoPlay(){
+  if(!isautoPlaying){
+  intervalId = setInterval(function(){
+    const playerMove  = pickComputerMove();
+    playGame(playerMove);
+  },1000);
+  isautoPlaying = true;
+}else{
+    clearInterval(intervalId);
+    isautoPlaying = false
+}
+ }
 
  function playGame(playerMove){
    const computerMove = pickComputerMove();
